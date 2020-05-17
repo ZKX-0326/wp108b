@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">  <!--標註為繁體中文語系-->
+    <title>
+        陳彥翔的個人網站
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width,initial-scale=1">  <!--隨裝置改變解析度-->
+    <meta name="auther" content="陳彥翔 Chen Yen-Hsiang">  <!--作者-->
+    <head>
+        <style>
+            body{
+                font-family: 標楷體;
+                background-image: url(IMG_20191101_173913.jpg);
+                background-repeat: fixed no-repeat;
+                background-size: cover;
+            }
+            h1{
+                background-color: rgba(0, 0, 0, 0.6);
+                color:white;
+                text-align: center;
+                font-family: 標楷體;
+            }
+            h2{
+                color:white;
+                font-family: 標楷體;
+            }
+            p{
+                color:white;
+                font-family: 標楷體;
+            }
+            .sidebar{
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: black;
+                overflow-x: hidden;
+                padding-top: 60px;
+                transition: 0.5s;
+            }
+            .sidebar a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: gray;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidebar a:hover{
+                color: white;
+            }
+            .sidebar .close{
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 60px;
+            }
+            #main{
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+            @media screen and (max-height: 450px){
+                .sidebar{
+                    padding-top: 15px;
+                }
+                .sidebar a{
+                    font-size: 18px;
+                }
+            }
+            .Menu{
+                overflow: hidden;
+                font-family: 標楷體;
+            }
+            .menu{
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .menu:hover{
+                background-color: red;
+            }
+        </style>
+        <h1>
+            我對未來的計劃
+        </h1>
+    </head>
+    <body>
+        <h2>近程</h2>
+        <p>目前我打算先保證大一全科及格，並在5/26的CPE考試中寫出至少2題，大二時則是把arduino和unity等專業技術學好</p>
+        <h2>中程</h2>
+        <p>大三時則是活用之前所學的知識來完成研究專題</p>
+        <h2>遠程</h2>
+        <p>大四下時除了實習還會準備考取研究所</p>
+        <div id="Sidebar" class="sidebar">
+            <a href="javascript: void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="https://www.facebook.com/profile.php?id=100003898818546">facebook</a>
+            <a href="https://github.com/ZKX-0326">GitHub</a>
+            <p style="font-size: 10px; color: white;">Phone number: 0984201711</p>
+            <p style="font-size: 10px; color: white;">Email: s110810502@student.nqu.edu.tw</p>
+        </div>
+        <span style="font-size: 30px; cursor: pointer; color: white; position: absolute; top: 25px; left: 30px;" onclick="openNav()">☰</span>
+        <span class="Menu" style="font-size: 20px; color: white; position: absolute; top: 33px; left: 80px;">About Me</span>
+        <script>  //Javascript
+            function openNav(){
+                document.getElementById("Sidebar").style.width="250px";
+            }
+            function closeNav(){
+                document.getElementById("Sidebar").style.width="0";
+            }
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>  <!--HTML-->
+<html lang="zh-Hant-TW">  <!--標註為繁體中文語系-->
+    <title>
+        陳彥翔的個人網站
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width,initial-scale=1">  <!--隨裝置改變解析度-->
+    <meta name="auther" content="陳彥翔 Chen Yen-Hsiang">  <!--作者-->
+    <head>
+        <style>
+            /*CSS*/
+            h1{
+                background-color: rgba(0, 0, 0, 0.6);
+                color: white;
+                text-align:center;
+                font-family: 標楷體;
+            }
+            table{
+                border: 1px solid white;
+                color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+            }
+            td,th{
+                background-color: rgba(255, 255, 255, 0.4);
+                border: 1px solid white;
+                color: black;
+                padding: 5px;
+                text-align: center;
+                width: auto;
+                vertical-align: middle;
+                text-align: center;
+            }
+            body{
+                font-family: 標楷體;
+                background-image: url(IMG_20191101_173913.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .sidebar{
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: black;
+                overflow-x: hidden;
+                padding-top: 60px;
+                transition: 0.5s;
+            }
+            .sidebar a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: gray;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidebar a:hover{
+                color: white;
+            }
+            .sidebar .close{
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 60px;
+            }
+            #main{
+                transition: margin-left .5s;
+                padding: 20px;
+            }
+            @media screen and (max-height: 450px){
+                .sidebar{
+                    padding-top: 15px;
+                }
+                .sidebar a{
+                    font-size: 18px;
+                }
+            }
+            .Menu{
+                overflow: hidden;
+                font-family: 標楷體;
+            }
+            .menu{
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .menu:hover{
+                background-color: red;
+            }
+        </style>
+        <h1>關於我</h1>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>項目</th>
+                <th>內容</th>
+            </tr>
+            <tr>
+                <td>姓名</td>
+                <td>陳彥翔</td>
+            </tr>
+            <tr>
+                <td>性別</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td>2001/03/26</td>
+            </tr>
+            <tr>
+                <td>職業</td>
+                <td>學生</td>
+            </tr>
+            <tr>
+                <td>興趣</td>
+                <td>
+                    <ul style="text-align: left;">
+                        <li>打排球</li>
+                        <li>騎腳踏車</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>學歷</td>
+                <td>
+                    <ul style="text-align: left;">
+                        <li><a href = "https://www.nqu.edu.tw/educsie/">國立金門大學資訊工程學系就讀中</a></li>
+                        <li><a href = "http://mars.yucsh.tp.edu.tw/ischool/publish_page/0/">臺北市立育成高級中學畢業</a></li>
+                        <li><a href = "http://www.hcjhs.ntpc.edu.tw/default_page.asp">新北市立汐止國民中學畢業</a></li>
+                        <li><a href = "https://www.hjes.ntpc.edu.tw/">新北市立汐止國民小學畢業</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div id="Sidebar" class="sidebar">
+            <a href="javascript: void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="https://www.facebook.com/profile.php?id=100003898818546">facebook</a>
+            <a href="https://github.com/ZKX-0326">GitHub</a>
+            <p style="font-size: 10px; color: white;">Phone number: 0984201711</p>
+            <p style="font-size: 10px; color: white;">Email: s110810502@student.nqu.edu.tw</p>
+        </div>
+        <span style="font-size: 30px; cursor: pointer; color: white; position: absolute; top: 25px; left: 30px;" onclick="openNav()">☰</span>
+        <span class="Menu" style="font-size: 20px; color: white; position: absolute; top: 33px; left: 80px;">My Plan For Future</span>
+        <script>  //Javascript
+            function openNav(){
+                document.getElementById("Sidebar").style.width="250px";
+            }
+            function closeNav(){
+                document.getElementById("Sidebar").style.width="0";
+            }
+        </script>
+    </body>
+</html>
