@@ -73,8 +73,11 @@
             .Menu{
                 overflow: hidden;
                 font-family: 標楷體;
+                position: absolute;
+                top: 25px;
+                left: 70px;
             }
-            .menu{
+            .Menu a{
                 float: left;
                 font-size: 16px;
                 color: white;
@@ -82,7 +85,7 @@
                 padding: 14px 16px;
                 text-decoration: none;
             }
-            .menu:hover{
+            .Menu a:hover{
                 background-color: red;
             }
         </style>
@@ -105,7 +108,7 @@
             <p style="font-size: 10px; color: white;">Email: s110810502@student.nqu.edu.tw</p>
         </div>
         <span style="font-size: 30px; cursor: pointer; color: white; position: absolute; top: 25px; left: 30px;" onclick="openNav()">☰</span>
-        <span class="Menu" style="font-size: 20px; color: white; position: absolute; top: 33px; left: 80px;"><a href="https://zkx-0326.github.io/wp108b/%E8%87%AA%E4%BB%8B/AboutMe.html">About Me</a></span>
+        <span class="Menu"><a href="https://zkx-0326.github.io/wp108b/%E8%87%AA%E4%BB%8B/AboutMe.html">About Me</a></span>
         <script>  //Javascript
             function openNav(){
                 document.getElementById("Sidebar").style.width="250px";
