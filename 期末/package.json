@@ -1,5 +1,6 @@
 {
   "name": "chat_room",
+  "auther":"陳彥翔",
   "version": "1.0.0",
   "description": "chat room",
   "main": "index.js",
